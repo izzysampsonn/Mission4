@@ -1,0 +1,46 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Grade Calculator";
+}
+
+<div class="grid-container">
+    <h2>Grade Calculator</h2>
+</div>
+<br />
+<br />
+<br />
+<br />
+<div class="grid-container gridform">
+    <form>
+        <label>Assignments:</label>
+        <input id="assignments" /> <br />
+        <label>Group Projects:</label>
+        <input id="projects" /> <br />
+        <label>Quizzes:</label>
+        <input id="quizzes" /> <br />
+        <label>Midterm Exam:</label>
+        <input id="midterm" /> <br />
+        <label>Final Exam:</label>
+        <input id="final" /> <br />
+        <label>INTEX:</label>
+        <input id="intex" /> <br />
+        <br />
+        <input class="button" id="calculate" type="button" value="Submit" />
+    </form>
+    <br /><br />
+</div>
+
+<!-- Java output -->
+<br />
+<br />
+<div class="grid-container result">
+    <h2 id="output"></h2>
+</div>
+<br />
+<br />
+
+<!-- Java and JQuery -->
+
+<script src="js/form.js"></script>
