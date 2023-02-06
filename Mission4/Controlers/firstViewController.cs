@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Mission4.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,9 +18,18 @@ namespace Mission4.Controlers
             return View();
         }
 
+        [HttpGet]
         public IActionResult Form()
         {
             return View();
         }
+
+        [HttpPost]
+        // validate input
+        public IActionResult Form(ValidateModel model)
+        {
+            return View();
+        }
+
     }
 }
